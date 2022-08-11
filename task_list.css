@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: azure; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+}
+/*********************************************************/
+.search{
+    padding: 50px 20px 20px 20px;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+/* .search > img{
+    /* width: 5%; 
+    /* height: 15px; 
+} */
+.arrow-logo{
+    align-self: center; 
+    flex-grow: 0;
+}
+.arrow-logo img{
+    width: 50%;
+    margin-left: 25%;
+}
+.search-input{
+    flex-grow: 1;
+    /* border-left: 2px solid rgb(44, 44, 44); */
+    
+}
+.search input{
+    width: 100%;
+    border: none;
+    border-left: 2px solid rgb(44, 44, 44);
+    height: 30px
+}
+.search-logo{
+    align-self: center;
+    flex-grow: 0;
+}
+.search-logo img{
+    width: 50%;
+    margin-left:25%;
+}
+/*********************************************************/
+.task-list{
+    /* background-color: black; */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2%;
+    border: none;
+    border-bottom: 1px solid #F1F1F5;
+    font-size: small;
+    /* border-bottom: 1px solid red; */
+}
+p{
+    color: #404040;;
+}
+.tl-img img{
+    width: 50%;
+    /* flex-grow: 1; */
+}
+.tl-img{
+    margin: 0 30px;
+    align-self: center;
+}
+.tl-txt{
+    display: block;
+    flex-grow: 1;
+}
+.tl-circle{
+    align-self: flex-start;
+    /* flex-grow: 1; */
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    margin: 0 10px;
+    border-radius: 50%;
+    /* align-self: flex-start; */
+}
+/*********************************************************/
+.dl-txt{
+    background-color: #FBD2E3;
+    width: 80%;
+    float: left;
+    height: 50px;
+    /* padding: 10px 0; */
+}
+.dl-txt h3{
+    padding-top: 10px;
+    padding-left: 25px;
+    color: #EE2375;
+    font-size: small;
+}
+.dl-txt p{
+    padding-left: 25px;
+    color: #EE2375;
+    font-size: small;
+}
+.dl-img{
+    float: right;
+    background-color: #EE2375;
+    width: 20%;
+    height: 50px;
+    /* padding: 10px 0; */
+}
+.dl-img img{
+    /* padding-left: 10px; */
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 20px;
+    height: auto;
+}
+#clearfix{
+    clear: both;
+}
