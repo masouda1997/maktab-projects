@@ -88,7 +88,7 @@ header button{
 }
 .task-box{
     position: relative;
-    /* background-color: #EE2375; */
+    background-color: rgba(241, 239, 239, 0.322);
     padding: 10px 100px 10px 20px;
     width: 100%;
     box-shadow:0 10px 10px 0 rgba(174, 210, 212, 0.432) ;
@@ -132,4 +132,14 @@ header button{
     width: 80%;
     height: 1px;
     margin-top: 2%;
+}
+/* for the time we want generate with DOM */
+.road-box{
+    position: absolute;
+    right: 5%;
+    width: 70%;
+    height: 10px;/*for test */
+    background-color: #EE2375;
+    border-radius: 8px;
+    border: 1px solid black;
 }
