@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+body{
+    background-color: white;
+}
+
+label{
+    display: block;
+    color: #7A7A7A;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    /* background-color: lightpink; */
+    /* background-color: white; */
+    width: 50%;
+    /* height: 1000px;*******test should be deletd ******* */
+    margin: 0 auto;
+}
+.add{
+    /* background-color: blueviolet; */
+    padding: 5%;
+
+}
+.add button{
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    background-color: white;
+    border: none;
+}
+button img{
+    width: 20px;
+    height: auto;
+    float: left;
+}
+.add input{
+    width: 100%;
+    padding: 0px;
+    font-size: 40px;
+    /* font-weight: lighter;why dont works???????? ==> add palceholder psudo class  */
+    border: none;
+    border-left: 2px solid black;
+}
+.add input::placeholder{
+    font-size: 30px;
+    color: #C5C5C5;
+    /* font-weight: lighter; */
+}
+
+
+
+
+.tools-box{
+    width: 80%;
+    float: right;
+    /* background-color: rgb(171, 226, 43); */
+    /* height: 1000px;*******test should be deletd ******* */
+}
+
+.date-input{
+    width: 50%;
+    border: none;
+}
+select{
+    width: 50%;
+    color: #424242;
+    border: none;
+    /* color: red; */
+}
+.task-type{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 3px 5px 0;
+    border: none;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+input[type="radio"]{
+    appearance: none;/*to hide radio button circle */
+}
+.btn1{
+    background-color:#42AAFD ;
+}
+.btn2{
+    background-color:#01BACC ;
+}
+.btn3{
+    background-color:#CD42FD ;
+}
+.btn4{
+    background-color:#EE2375 ;
+}
+.btn5{
+    background-color:#8539F9 ;
+}
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #F1F1F5;
+
+}
+textarea::placeholder{
+    font-size: xx-large;
+    color: #C6C6C6;
+}
+.btn6{
+    margin-top: 30%;
+    background-color: #e8e8e9;
+    color: white;
+}
+
+
