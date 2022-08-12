@@ -17,7 +17,7 @@
                 <p class="sub-text">Today you have ... tasks</p>
             </div>
             <div class="">
-                <button>+</button>
+                <button onclick="window.location.href='Add_task.html' "><img src="assets/plus.png" alt=""></button>
             </div>
         </header>
         <main>
@@ -35,37 +35,42 @@
     
             <!-- boxes -->
             <section class="tasks">
-                <div class="task-box">
+                <div class="task-box color1">
                     <h3>work</h3>
                     <p class="sub-text">7 tasks</p>
                     <div> </div>
                 </div>
-                <div class="task-box">
-                    <h3>work</h3>
+                <div class="task-box color2">
+                    <h3>shop</h3>
+                    <p class="sub-text">7tasks</p>
+                    <div> </div>
+                </div>
+                <div class="task-box color3">
+                    <h3>personal</h3>
                     <p class="sub-text">7 tasks</p>
                     <div> </div>
                 </div>
-                <div class="task-box">
-                    <h3>work</h3>
-                    <p class="sub-text">7 tasks</p>
-                    <div> </div>
-                </div>
-                <div class="task-box">
-                    <h3>work</h3>
+                <div class="task-box color4">
+                    <h3>helth</h3>
                     <p class="sub-text">7 tasks</p>
                     <div> </div>
                 </div>
             </section>
+            <div class="clearfix"></div>
             <!-- time line road map -->
-            <section>
-                <div class="timeline-box">
-                    <div class="road-box"></div>
+            <section id="timelineId">
+                <!-- <div class="timeline-box">
+                    <div class="road-box">
+                        <div class="circle-color1"></div>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                     <div>
                         <span class="sub-text">08:00</span>
                         <div class="line"></div>
                     </div>
-                </div>                
-                <div class="timeline-box">
+                </div> -->
+                <!-- <div class="timeline-box">
                     <div>
                         <span class="sub-text">08:30</span>
                         <div class="line"></div>
@@ -114,10 +119,11 @@
                         <span class="sub-text">12:00</span>
                         <div class="line"></div>
                     </div>
-                </div>                
+                </div>                 -->
                 <!-- <div class="task-time"></div> -->
             </section>
         </main>
     </div>
+    <script src="home.js"></script>
 </body>
 </html>

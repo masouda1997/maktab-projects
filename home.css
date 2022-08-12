@@ -73,6 +73,8 @@ header button{
 
 .tasks{
     /* background-color: aquamarine; */
+    width: 80%;
+    float: right;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
@@ -84,6 +86,7 @@ header button{
     justify-items: left;
     align-items: center;
     margin-bottom: 10%;
+    margin-right: 15px;
     
 }
 .task-box{
@@ -100,10 +103,26 @@ header button{
     position: absolute;
     top:10px ;
     right: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 50%;
 }
+.color1{
+    background-color: #42AAFD;
+}
+.color2{
+    background-color: #CD42FD;
+}
+.color3{
+    background-color: #01BACC;
+}
+.color4{
+    background-color: #EE2375;
+}
 
+/* to avoid combine with timeline  */
+.clearfix{
+    clear: both;
+}
 
 
 /* ************************************************** */
@@ -115,7 +134,6 @@ header button{
     padding: 10px;
     position: relative;/*for show task boxes in time line*/
 
-    /* background-color: rgba(0, 0, 255, 0.418); */
 }
 .timeline-box span{
     /* background-color: yellow; */
@@ -138,8 +156,17 @@ header button{
     position: absolute;
     right: 5%;
     width: 70%;
-    height: 10px;/*for test */
-    background-color: #EE2375;
+    /* height: 10px;for test */
+    background-color: #c66516c8;
     border-radius: 8px;
     border: 1px solid black;
+    padding: 10px;
+    /* margin-top: 30px; */
+}
+.circle-color1{
+    float: right;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:#42AAFD ;
 }

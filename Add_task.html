@@ -5,61 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Add_task.css">
+    <!-- <link rel="stylesheet" href="home.html"> -->
     <title>add task</title>
 </head>
 <body>
     <div class="container">
         <section class="add">
-                <button><img src="assets/arrow-left.png" alt=""></button>
-                <input type="text" placeholder="Add task">  
+                <button onclick="window.location.href='home.html'"><img src="assets/arrow-left.png" alt=""></button>
+                <input type="text" placeholder="Add task" id="inputId">  
         </section>
+
         <section class="tools-box">
+
             <label>choose date</label>
-            <input type="date" class="date-input">
+            <input type="date" class="date-input" id="dateId">
+
+
             <label>choose time</label>
-            <select name="" id="">
-                <option value="1">08:00 - 08:30</option>
-                <option value="2">09:00 - 09:30</option>
-                <option value="3">10:00 - 10:30</option>
-                <option value="4">11:00 - 11:30</option>
-                <option value="5">12:00 - 12:30</option>
+            <select name="" id="timeId">
+                <option value="08:00">08:00 - 08:30</option>
+                <option value="09:00">09:00 - 09:30</option>
+                <option value="10:00">10:00 - 10:30</option>
+                <option value="11:00">11:00 - 11:30</option>
+                <option value="12:00">12:00 - 12:30</option>
+                <option value="13:00">13:00 - 13:30</option>
+                <option value="14:00">14:00 - 08:30</option>
+                <option value="15:00">15:00 - 15:30</option>
+                <option value="16:00">16:00 - 16:30</option>
+                <option value="17:00">17:00 - 17:30</option>
+                <option value="18:00">18:00 - 18:30</option>
+                <option value="19:00">19:00 - 19:30</option>
+                <option value="20:00">20:00 - 20:30</option>
+
             </select>
 
             <label>choose task type</label>
 
             <label class="task-type btn1"  for="b1">
-                <input type="radio" id="b1">
+                <input name="my-radio" type="radio" id="b1" value=" work" onchange="setCat(this)">
                 Work
             </label>
             
             <label class="task-type btn2" for="b2">
-                <input type="radio" id="b2">
+                <input name="my-radio" type="radio" id="b2" value="Personal" onchange="setCat(this)">
                 Presonal
             </label>
 
             <label class="task-type btn3" for="b3">
-                <input type="radio" id="b3">
+                <input name="my-radio" type="radio" id="b3" value="Shopping" onchange="setCat(this)">
                 Shopping
             </label>
 
             <label class="task-type btn4" for="b4">
-                <input type="radio" id="b4">
+                <input name="my-radio" type="radio" id="b4" value="Health" onchange="setCat(this)">
                 Health
             </label>
 
             <label class="task-type btn5" for="b5">
-                <input type="radio" id="b5">
+                <input name="my-radio" type="radio" id="b5" value="Other" onchange="setCat(this)">
                 Other
             </label>
 
             <label for="">Write description</label>
-            <textarea placeholder="Description..." rows="10"></textarea>
+            <textarea placeholder="Description..." rows="10" id="textareaID"></textarea>
 
-            <button class="task-type btn6">
+            <button class="task-type btn6" onclick="getData()">
                 add task
             </button>
 
         </section>
     </div>
+    <script src="add-task.js"></script>
 </body>
 </html>
