@@ -157,7 +157,7 @@ header button{
     right: 5%;
     width: 70%;
     /* height: 10px;for test */
-    background-color: #c66516c8;
+    /* background-color: #c66516c8; */
     border-radius: 8px;
     border: 1px solid black;
     padding: 10px;
@@ -168,5 +168,6 @@ header button{
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color:#42AAFD ;
+    background-color: white;
+    /* background-color:#42AAFD ; */
 }
