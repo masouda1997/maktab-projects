@@ -6,6 +6,7 @@ let lStor = JSON.parse(localStorage.getItem("tasks"));
 // task left and number
 document.getElementById("taskNum").innerText = lStor.length
 document.getElementById('taskLeft').innerText = lStor.length
+document.getElementById('totaltask').innerText=`Today you have ${lStor.length} task`
 
 //task boxes
 let work = document.getElementById('workID')
@@ -60,15 +61,27 @@ for (let i = 0; i <= 24; i++) {
                                 </div>`;
             timeline.appendChild(div);
             let boxColor=document.getElementById('wId')
+            // let hoverColor=document.querySelector('#wId')
+            let circleColor = document.querySelector('.circle-color1')
+
             console.log(boxColor);
-            boxColor.style.backgroundColor = "#01BACC";
+            boxColor.style.backgroundColor = "whitesmoke";
+            circleColor.style.backgroundColor = "#42AAFD"
+            boxColor.addEventListener('mouseover',function(){
+                boxColor.style.backgroundColor = "#42AAFD"
+                circleColor.style.backgroundColor = "white"
+            })
+            boxColor.addEventListener('mouseleave',function(){
+                boxColor.style.backgroundColor = "whitesmoke"
+                circleColor.style.backgroundColor = "#42AAFD"
+            })
     
             }
         else if(currentTask.type === "Shopping"){
             div.innerHTML = `<div class='timeline-box' id="tb">
                                     ${
                                         currentTask? `<div class='road-box' id='shId'>
-                                        <div class="circle-color1"></div>
+                                        <div class="circle-color2"></div>
                                         <h3>${currentTask.title}</h3>
                                         <p>${currentTask.description}</p>
                                     </div>`: ""
@@ -82,14 +95,27 @@ for (let i = 0; i <= 24; i++) {
                                 </div>`;
             timeline.appendChild(div);
             let boxColor=document.querySelector('#shId')
+            // let hoverColor=document.querySelector('.road-box')
+            let circleColor = document.querySelector('.circle-color2')
+
+
             console.log('mybox',boxColor);
-            boxColor.style.backgroundColor = "#CD42FD";
+            boxColor.style.backgroundColor = "whitesmoke";
+            circleColor.style.backgroundColor = "#CD42FD"
+            boxColor.addEventListener('mouseover',function(){
+                boxColor.style.backgroundColor = "#CD42FD"
+                circleColor.style.backgroundColor = "white"
+                })
+            boxColor.addEventListener('mouseleave',function(){
+                boxColor.style.backgroundColor = "whitesmoke"
+                circleColor.style.backgroundColor = "#CD42FD"
+                })
             }
         else if(currentTask.type === "Personal"){
             div.innerHTML = `<div class='timeline-box' id="tb">
                                     ${
                                         currentTask? `<div class='road-box'  id = 'pId'>
-                                        <div class="circle-color1"></div>
+                                        <div class="circle-color3"></div>
                                         <h3>${currentTask.title}</h3>
                                         <p>${currentTask.description}</p>
                                     </div>`: ""
@@ -103,14 +129,27 @@ for (let i = 0; i <= 24; i++) {
                                 </div>`;
             timeline.appendChild(div);
             let boxColor=document.getElementById('pId')
+            // let hoverColor=document.querySelector('.road-box')
+            let circleColor = document.querySelector('.circle-color3')
+
             console.log(boxColor);
-            boxColor.style.backgroundColor = "#01BACC";
+            boxColor.style.backgroundColor = "whitesmoke";
+            circleColor.style.backgroundColor = "#01BACC"
+
+            boxColor.addEventListener('mouseover',function(){
+                boxColor.style.backgroundColor = "#01BACC"
+                circleColor.style.backgroundColor = "white"
+                })
+            boxColor.addEventListener('mouseleave',function(){
+                boxColor.style.backgroundColor = "whitesmoke"
+                circleColor.style.backgroundColor = "#01BACC"
+                })
             }
         else if(currentTask.type === "Health"){
             div.innerHTML = `<div class='timeline-box' id="tb">
                                     ${
                                         currentTask? `<div class='road-box'  id = "hId">
-                                        <div class="circle-color1"></div>
+                                        <div class="circle-color4"></div>
                                         <h3>${currentTask.title}</h3>
                                         <p>${currentTask.description}</p>
                                     </div>`: ""
@@ -124,10 +163,22 @@ for (let i = 0; i <= 24; i++) {
                                 </div>`;
             timeline.appendChild(div);
             let boxColor=document.getElementById('hId')
+            // let hoverColor=document.querySelector('.road-box')
+            let circleColor = document.querySelector('.circle-color4')
+            
             console.log(boxColor);
-            boxColor.style.backgroundColor = "#EE2375";
+            boxColor.style.backgroundColor = "whitesmoke";
+            circleColor.style.backgroundColor = "#EE2375"
+            boxColor.addEventListener('mouseover',function(){
+                boxColor.style.backgroundColor = "#EE2375"
+                circleColor.style.backgroundColor = "white"
+                })
+            boxColor.addEventListener('mouseleave',function(){
+                boxColor.style.backgroundColor = "whitesmoke"
+                circleColor.style.backgroundColor = "#EE2375"
+                })
             }
-    }
+        }
     else{
         div.innerHTML = `<div class='timeline-box' id="tb">
                                 <div>
