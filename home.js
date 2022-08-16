@@ -40,7 +40,7 @@ for (let i = 0; i <= 24; i++) {
     let div = document.createElement("div");
     div.className = "timeline-box";
     const currentTask = lStor.find((item) => item.time === timeArray[i]);
-    console.warn('sss',currentTask);
+    // console.warn('sss',currentTask);
     if(currentTask != undefined){
 
         if(currentTask.type === "work"){

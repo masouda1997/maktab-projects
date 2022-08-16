@@ -58,24 +58,64 @@ button{
     margin-left:25%;
 }
 /*********************************************************/
-.task-list{
-    /* background-color: black; */
+table{
+    /* border: 1px solid black; */
+    padding-bottom: 20px;
+    width: 100%;
+}
+tr > td > img{
+    margin:0 15%;
+    width: 80%;
+    height: auto;
+}
+tr h3 , p{
+    display: block;
+    margin-left: 10%;
+}
+tr td:nth-child(1){
+    width: 10%;
+    padding-left: 10px;
+}
+tr td:nth-child(3){
+    width: 10%;
+}
+tr td:nth-child(3) div {
+    margin-left: 40%;
+}
+/**********************delete box************************/
+.delete-box{
+    background-color: #FBD2E3;
+}
+.col-font{
+    width: 80%;
+    font-size: small;
+    color: #EE2375;
+}
+.trash-icon{
+    width: 2%;
+    background-color: #EE2375;
+}
+.trash-icon img{
+    margin:10% 30%;
+    width: 40%;
+}
+
+/* .task-list{
     padding: 10px 0;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 2%;
     border: none;
     border-bottom: 1px solid #F1F1F5;
     font-size: small;
-    /* border-bottom: 1px solid red; */
 }
 p{
     color: #404040;;
 }
 .tl-img img{
     width: 50%;
-    /* flex-grow: 1; */
+    flex-grow: 1;
 }
 .tl-img{
     margin: 0 30px;
@@ -84,26 +124,50 @@ p{
 .tl-txt{
     display: block;
     flex-grow: 1;
-}
-.tl-circle{
+} 
+ .tl-circle{
     align-self: flex-start;
-    /* flex-grow: 1; */
-}
-.circle{
+     flex-grow: 1; 
+ }  */
+.circle1{
     width: 8px;
     height: 8px;
-    background-color: red;
+    background-color: black;
+    /* margin: 0 10px; */
+    /* margin: 10px; */
+    border-radius: 50%;
+    /* align-self: flex-start; */
+}
+.circle2{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    margin: 0 10px;
+    border-radius: 50%;
+    /* align-self: flex-start; */
+}
+.circle3{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    margin: 0 10px;
+    border-radius: 50%;
+    /* align-self: flex-start; */
+}
+.circle4{
+    width: 8px;
+    height: 8px;
+    background-color: black;
     margin: 0 10px;
     border-radius: 50%;
     /* align-self: flex-start; */
 }
 /*********************************************************/
-.dl-txt{
+/* .dl-txt{
     background-color: #FBD2E3;
     width: 80%;
     float: left;
     height: 50px;
-    /* padding: 10px 0; */
 }
 .dl-txt h3{
     padding-top: 10px;
@@ -121,10 +185,8 @@ p{
     background-color: #EE2375;
     width: 20%;
     height: 50px;
-    /* padding: 10px 0; */
 }
 .dl-img img{
-    /* padding-left: 10px; */
     margin-left: 25px;
     margin-top: 10px;
     width: 20px;
@@ -132,4 +194,4 @@ p{
 }
 #clearfix{
     clear: both;
-}
+} */

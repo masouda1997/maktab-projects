@@ -5,27 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="task_list.css">
+    <link rel="stylesheet" href="home.html">
     <title>task list</title>
 </head>
 <body>
     <div class="container">
         <div class="search">
-            <div class="arrow-logo">
-                <img src="assets/arrow-left.png" alt="left" >
+            <div class="arrow-logo" >
+                <a href="home.html"><img src="assets/arrow-left.png" alt="left" ></a>
             </div>
             <div class="search-input">
-                <input type="text" placeholder="Search task">
+                <input type="text" id="filter" placeholder="Search task...">
             </div>
             <div class="search-logo">
-                <button>
-                    <img src="assets/search.png" alt="search" >
-                </button>
+                <!-- <button> -->
+                <img src="assets/search.png" alt="search" >
+                <!-- </button> -->
                 
             </div>
         </div>
-
-        <section>
-            <div class="dl-txt">
+            <!-- =========================================== -->
+        <section class="section-rows">
+            <!-- <table >
+                <tr class="delete-box">
+                    <td class="col-font">
+                        <h3>daily UI Challenge</h3>
+                        <p>Create TO-DO list</p>
+                    </td>
+                    <td class="trash-icon">
+                        <img src="assets/trash.png" alt="trash">
+                    </td>
+                </tr>
+            </table> -->
+            <!-- =========================================== -->
+            <!-- <table>
+                <tr>
+                    <td>
+                        <img src="assets/edit.png" alt="edit">
+                    </td>
+                    <td>
+                        <h3>do smt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </td>
+                    <td>
+                        <div class="circle1"></div>
+                    </td>
+                </tr>
+            </table> -->
+            <!-- =========================================== -->
+            <!-- <div class="dl-txt">
                 <h3>daily UI Challenge</h3>
                 <p>Create TO-DO list</p>
             </div>
@@ -34,25 +62,10 @@
                 <button>
                     <img src="assets/trash.png" alt="">
                 </button>
-            </div>
-
-            <div id="clearfix"></div>
-
-
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Doooooo yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
-            
-            <div class="task-list">
+            </div> -->
+            <!-- <div id="clearfix"></div> -->
+            <!-- =========================================== -->
+            <!-- <div class="task-list">
                 <div class="tl-img">
                     <img src="assets/edit.png" alt="edit">
                 </div>
@@ -61,75 +74,11 @@
                     <p>15 minutes</p>
                 </div>
                 <div class="tl-circle">
-                    <div class="circle"></div>
+                    <div class="circle1"></div>
                 </div>
-            </div>
-    
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Do yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
-    
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Do yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
-    
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Do yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
-    
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Do yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
-    
-            <div class="task-list">
-                <div class="tl-img">
-                    <img src="assets/edit.png" alt="edit">
-                </div>
-                <div class="tl-txt">
-                    <h3>Do yoga</h3>
-                    <p>15 minutes</p>
-                </div>
-                <div class="tl-circle">
-                    <div class="circle"></div>
-                </div>
-            </div>
+            </div> -->
         </section>
     </div>
+    <script src="task-list.js"></script>
 </body>
 </html>
