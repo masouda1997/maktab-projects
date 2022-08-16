@@ -40,7 +40,7 @@ for (let i = 0; i <= 24; i++) {
     let div = document.createElement("div");
     div.className = "timeline-box";
     const currentTask = lStor.find((item) => item.time === timeArray[i]);
-    // console.warn('sss',currentTask);
+    console.warn('sss',currentTask);
     if(currentTask != undefined){
 
         if(currentTask.type === "work"){
@@ -60,7 +60,7 @@ for (let i = 0; i <= 24; i++) {
                                     </div>
                                 </div>`;
             timeline.appendChild(div);
-            let boxColor=document.getElementById('wId')
+            let boxColor= document.getElementById('wId')
             // let hoverColor=document.querySelector('#wId')
             let circleColor = document.querySelector('.circle-color1')
 
@@ -94,9 +94,9 @@ for (let i = 0; i <= 24; i++) {
                                     </div>
                                 </div>`;
             timeline.appendChild(div);
-            let boxColor=document.querySelector('#shId')
+            let boxColor=div.querySelector('#shId')
             // let hoverColor=document.querySelector('.road-box')
-            let circleColor = document.querySelector('.circle-color2')
+            let circleColor = div.querySelector('.circle-color2')
 
 
             console.log('mybox',boxColor);
@@ -162,7 +162,7 @@ for (let i = 0; i <= 24; i++) {
                                     </div>
                                 </div>`;
             timeline.appendChild(div);
-            let boxColor=document.getElementById('hId')
+            let boxColor= document.getElementById('hId')
             // let hoverColor=document.querySelector('.road-box')
             let circleColor = document.querySelector('.circle-color4')
             
