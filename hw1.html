@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw1</title>
+</head>
+<body>
+    <script>
+        'use strict'
+
+        const user ={}
+        const city = {}
+        // solution2
+        function setterGenerator(property) {   
+            function x(value){
+                // obj.property = value;// here just add one property 
+                this[property]= value
+            }
+            return x.bind(user)
+        }       
+        // solution1 
+        function setterGenerator2(property ,obj) {   
+            return function(value){
+                // obj.property = value;// here just add one property 
+                obj[property] = value
+            }
+        }
+
+        setterGenerator('name')('Masoud')
+        let family = setterGenerator('family');
+        family('Anaraki')
+        console.log('user : ', user);
+
+        let population = setterGenerator2('population' , city)
+        setterGenerator2('name' , city)("Rio de janeiro")
+        population(6748000)
+        console.log('city : ',city);
+
+    </script>
+</body>
+</html>

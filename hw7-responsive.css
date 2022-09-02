@@ -1,0 +1,43 @@
+
+/* @media */
+
+@media ( max-width:783px){
+    .circle{
+        right: 35%;
+    }
+    .boxes{
+        padding-inline: .5em;
+    }
+}
+@media(max-width:655px){
+    .container{
+        flex-direction: column;
+        gap: 5px;
+        padding-block: 10em;
+    }
+    .boxes img{
+        margin-top: 5%;
+    }
+    .circle{
+        right: 42.5%;
+    }
+}
+@media(max-width:490px){
+    .tc , .bc{
+        width: 10em;
+        height: 10em;
+    }
+    .tc{
+        top : -5em;
+        right: -5em;
+    }
+    .bc{
+        bottom : -5em;
+        left: -5em;
+    }
+}
+@media(max-width:300px){
+    .circle{
+        right: 38%;
+    }
+}

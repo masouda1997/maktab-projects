@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+
+        function counterMaker(){
+            let c = 0
+            return function(a , b = 0){
+                a === undefined ? c += b : c +=a
+                console.log(c);
+            } 
+        }
+        
+        const counter = counterMaker()
+        // console.log(counter()); 
+        // console.log(counter(15)); 
+        // console.log(counter(-8)); 
+        counter()
+        counter(13)
+        counter(0)
+        counter()
+        counter(3)
+        counter(-4)
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: #F9F9F9;
+    /* background-color: #111; */
+}
+nav{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 2em;
+    margin-inline: 0;
+    padding-inline: 0;
+    border-radius: 20px;
+}
+.logo{
+    /* background-color: darkblue; */
+    flex: 7;
+    font-size: xx-large
+}
+.logo h1{
+    margin: 1%;
+}
+#l1{
+    /* color: #727272; */
+    color: #989898;
+}
+#l2{
+    /* color: #3F3F3F; */
+    color: #656565;
+    /* backdrop-filter: 50%; */
+}
+#l3{
+    /* color: #222527; */
+    color: #43494D;
+}
+.mode{
+    font-size: larger;
+    /* color: #50565a; */
+    color: #656565;
+}
+.theme{
+    flex: 1;
+
+}
+
+/* ************************************************************************************************************************************************************************** */
+
+
+.toggle-pill input[type="checkbox"] {
+    display: none;
+}
+/* capsule */
+.toggle-pill input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    width: 5.6em;
+    height: 2.9em;
+    border-radius: 2em;
+    background: #f3f3f3;
+    /* background: #131313; */
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;*/
+    /* -webkit-transition: background 0.1s ease-in-out;  */
+    /* transition: background 0.1s ease-in-out; */
+}
+.toggle-pill input[type="checkbox"]:checked+label {
+    /*change pill background*/
+    /* background: #131313; */
+    /* background: #f3f3f3; */
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.9);
+
+}
+/* trigger */
+.toggle-pill input[type="checkbox"]+label:before {
+    content: "";
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    /* background: #50565a; */
+    background: #989898;
+    /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); */
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+    /* -webkit-transition: all 0.2s ease-in-out; */
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-pill input[type="checkbox"]:checked+label:before {
+    /* box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); */
+    background: #111;
+    left: 2.9em;
+}
+/* .toggle-pill input[type="checkbox"]:checked+label {
+    background: #fff;
+} */
+
+
+  /* ************************************************************************************************************************************************************************** */
+img{
+    width: 100%;
+    /* min-width:100%; */
+    min-height:100%;    
+}
+.container{
+    height: 70vh;
+    /* background-color: gold; */
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "t1 t3 t5 t7"             
+    "t2 t3 t6 t7"  
+    "t2 t4 t6 t8";
+    row-gap: 1em;
+    column-gap: 1em;
+    gap: 5px;
+}
+.trc1{
+    grid-area: t1;
+    /* filter: blur(7px); */
+}
+.trc2{
+    grid-area: t2;
+    /* filter: blur(7px); */
+}
+.trc3{
+    grid-area: t3;
+    /* filter: blur(7px); */
+}
+.trc4{
+    grid-area: t4;
+    /* filter: blur(7px); */
+}
+.trc5{
+    grid-area: t5;
+    /* filter: blur(7px); */
+
+}
+.trc6{
+    grid-area: t6;
+    /* filter: blur(7px); */
+}
+.trc7{
+    grid-area: t7;
+    /* filter: blur(7px); */
+}
+.trc8{
+    grid-area: t8;
+    /* filter: blur(7px); */
+}
+/************************ we can add it **************** */
+/* .trc1:hover{
+    filter: blur(0px);
+}
+.trc2:hover{
+    filter: blur(0px);
+}
+.trc3:hover{
+    filter: blur(0px);
+}
+.trc4:hover{
+    filter: blur(0px);
+}
+.trc5:hover{
+    filter: blur(0px);
+}
+.trc6:hover{
+    filter: blur(0px);
+}
+.trc7:hover{
+    filter: blur(0px);
+}
+.trc8:hover{
+    filter: blur(0px);
+} */

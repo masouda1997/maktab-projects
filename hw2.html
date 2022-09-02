@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+</head>
+<body>
+
+    <script>
+        'use srtict'
+        const callback = function(elem){
+            elem.innerHTML=`<h1>you're not special you're just a limited Edition</h1>`
+            elem.style.color = 'white' 
+            elem.style.textAlign ='center'
+            elem.style.borderRadius = '10px'
+            elem.style.width = '762px'
+            elem.style.margin = '0 auto'
+            elem.style.backgroundColor = 'red';
+            return elem
+        }
+
+        function elementCreator(elem , func){
+            const node = document.createElement(elem)
+            let styledNode = func(node);
+            document.body.append(node)
+        }
+
+        elementCreator("div", callback)
+        elementCreator("h2", callback)
+        elementCreator("h1", callback)
+    </script>
+</body>
+</html>
