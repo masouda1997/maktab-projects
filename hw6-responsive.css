@@ -1,0 +1,51 @@
+@media(max-width:800px){
+    .container{
+        width: 90%;
+    }
+    .logo{
+        flex: 5;
+    }
+}
+@media(max-width:620px){
+    .container{
+        grid-template-areas: 
+        "t1 t3 t5"             
+        "t2 t3 t6"  
+        "t2 t4 t6"
+        "t8 t8 t7";
+    }
+    .trc8{
+        max-height: 400px;
+    }
+    .trc7{
+        max-height: 400px;
+    }
+    .logo{
+        flex: 4;
+        font-size: x-large;
+    }
+    .toggle-pill{
+        padding-left: 10%;
+    }
+    .toggle-pill input[type="checkbox"]+label {
+        width: 3.6em;
+        height: 2em;
+    }
+    .toggle-pill input[type="checkbox"]+label:before{
+        width: 1.6em;
+        height: 1.6em;
+    }
+    .toggle-pill input[type="checkbox"]:checked+label:before{
+        left: 1.8em;
+    }
+
+}
+@media(max-width:380px){
+    .container{
+        width: 100%;
+    }
+    .logo{
+        flex:3;
+        font-size: larger;
+    }
+}

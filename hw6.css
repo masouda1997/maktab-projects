@@ -1,6 +1,8 @@
 
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color: #F9F9F9;
@@ -14,9 +16,8 @@ nav{
     justify-content: space-between;
     gap: 5px;
     margin-bottom: 2em;
-    margin-inline: 0;
-    padding-inline: 0;
-    border-radius: 20px;
+    padding-block: .8em;
+    /* padding-inline-end: .3em; */
 }
 .logo{
     /* background-color: darkblue; */
@@ -89,6 +90,7 @@ nav{
     border-radius: 50%;
     /* background: #50565a; */
     background: #989898;
+    background: #111;
     /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); */
     position: absolute;
     left: 0.2em;
@@ -100,13 +102,13 @@ nav{
 .toggle-pill input[type="checkbox"]:checked+label:before {
     /* box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); */
     background: #111;
+    background: #989898;
     left: 2.9em;
+    /* left: 3.9em; */
 }
 /* .toggle-pill input[type="checkbox"]:checked+label {
     background: #fff;
 } */
-
-
   /* ************************************************************************************************************************************************************************** */
 img{
     width: 100%;
@@ -146,7 +148,6 @@ img{
 .trc5{
     grid-area: t5;
     /* filter: blur(7px); */
-
 }
 .trc6{
     grid-area: t6;
@@ -158,6 +159,11 @@ img{
 }
 .trc8{
     grid-area: t8;
+    /* filter: blur(7px); */
+}
+.trc9{
+    display: hidden;
+    grid-area: t9;
     /* filter: blur(7px); */
 }
 /************************ we can add it **************** */
